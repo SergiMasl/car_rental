@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import "./styles/app.sass";
 import BookCar from "./components/BookCar";
+import MapOfBook from "./components/MapOfBook";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home />
       <BookCar />
+      <MapOfBook />
     </div>
   );
 }
