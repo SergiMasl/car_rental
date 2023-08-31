@@ -1,0 +1,37 @@
+{
+    "carType":
+        {
+            "value":"typeOfCar",
+            "type":"select",
+            "name":"Select Your Car Type",
+            "options":["Large", "Mini", "Convectoble", "Van", "Luxary"]
+        },
+     "pickUpTime":
+        {
+            "value":"pickUpTime",
+            "type":"time",
+            "name":"Pick-up",
+            "options":""
+        },
+    "pickUpPlace":
+        {
+            "value":"pickUpPlace",
+            "type":"select",
+            "name":"Pick-up",
+            "options":["Dallas", "LA", "Chicago", "NY", "Detroit", "Maimi", "Seattle"]
+        },
+        "dropOffTime":
+        {
+            "value":"typeOfCar",
+            "type":"time",
+            "name":"Drop-of",
+            "options":""
+        },
+        "dropOffPlace":
+        {
+            "value":"dropOffPlace",
+            "type":"select",
+            "name":"Drop-of",
+            "options":["Dallas", "LA", "Chicago", "NY", "Detroit", "Maimi", "Seattle"]
+        }
+ }

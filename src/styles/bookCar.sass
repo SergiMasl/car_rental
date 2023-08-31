@@ -1,0 +1,69 @@
+@import './_variables'
+@import './_extensional'
+
+.container
+    @include container(900px, 100vh, center, row)
+
+.book--wrapper
+    @include container(100%, auto, start, column)
+    align-items: start
+    div
+        width: 100%
+
+    h1
+        font-family: $fontText
+        color: $blackText
+        margin-bottom: 15px
+        font-weight: 900
+        font-size: 20px
+
+.book--form
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 40px
+    div
+        @include container(200px, auto, start, column)
+        align-items: start
+
+        label
+            font-family: $fontText
+            margin-bottom: 10px
+
+        select
+            font-family: $fontText
+            color: $greyColor
+            padding: 5px 20px
+            width: 200px
+            border: none
+            border-left: 2px solid $greyColor
+            border-bottom: 2px solid $greyColor
+
+        input
+            font-family: $fontText
+            color: $greyColor
+            padding: 5px 20px
+            width: 200px
+            border: none
+            border-left: 2px solid $greyColor
+            border-bottom: 2px solid $greyColor
+
+    button
+        background-color: $btmBrandColor
+        margin-right: 15px
+        box-shadow: 2px 3px 8px #f14303
+        width: 200px
+        border: none
+        size: 20px
+        padding: 10px 40px
+        border-radius: 2px
+        font-family: $fontText
+        color: $whiteColor
+        cursor: pointer
+
+.book--form--input
+    width: 200px
+
+img
+    width: 10px
+    margin-right: 10px

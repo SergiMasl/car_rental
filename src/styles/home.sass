@@ -1,0 +1,49 @@
+@import './_variables'
+@import './_extensional'
+
+.container
+    @include container(900px, 100vh, center, row)
+
+.home--wrapper
+    @include container(100%, auto, start, row)
+
+.home--info
+    width: 50%
+    p
+        font-family: $fontText
+        font-size: 15px
+        color: $blackText
+        margin-bottom: 15px
+        font-weight: 500
+    p:nth-child(3)
+        color: $greyColor
+    h1
+        font-family: $fontText
+        color: $blackText
+        margin-bottom: 15px
+        font-weight: 900
+
+.home--main--img
+    width: 50%
+    img
+        width: 100%
+
+.home--btm-wrapper
+    button
+        border: none
+        width: 160px
+        size: 20px
+        padding: 10px 40px
+        border-radius: 2px
+        font-family: $fontText
+        color: $whiteColor
+        cursor: pointer
+    button
+        background-color: #fff
+    button:nth-child(1)
+        background-color: $btmBrandColor
+        margin-right: 15px
+        box-shadow: 2px 3px 8px #f14303
+    button:nth-child(2)
+        background-color: $btmBlackColor
+        box-shadow: 2px 3px 8px $btmBlackColor
