@@ -1,0 +1,91 @@
+@import './_variables'
+@import './_extensional'
+
+.cars--wrapper
+    @include container(100%, auto, start, column)
+    p:nth-child(1)
+        font-family: $fontText
+        margin-bottom: 10px
+    h2
+        font-family: $fontText
+        color: $blackText
+        margin-bottom: 15px
+        font-weight: 900
+        font-size: 20px
+
+    p:nth-child(3)
+        text-align: center
+        color: $greyColor
+        font-size: 15px
+        margin-bottom: 40px
+
+    .cars--info--wrap
+        @include container(100%, auto, center, row)
+
+        div:nth-child(1)
+            width: 20%
+            margin-right: 30px
+            div
+                width: 100%
+                padding: 15px
+                cursor: pointer
+                font-family: $fontText
+                border: none
+                &:hover
+                    background-color: $btmBrandColor
+                    color: $whiteColor
+
+        div:nth-child(2)
+            width: 55%
+            margin-right: 30px
+            img
+                width: 100%
+        div:nth-child(3)
+            width: 25%
+            border: 1px solid red
+
+            div
+                width: 100%
+                div
+                    @include container(100%, auto, space-around, row)
+                    align-items: start
+                    cursor: auto
+                .car-price
+                    padding-top: 10px
+                    background-color: $btmBrandColor
+                    font-family: $fontText
+                    color: $whiteColor
+                    font-weight: 900
+                    font-size: 20px
+                    width: 195px
+                    p
+                        margin: 0
+                .car-info--detals
+                    background-color: $whiteColor
+                    font-family: $fontText
+                    color: $blackText
+                    font-weight: 300
+                    font-size: 13px
+                    width: 195px
+                    border-bottom: 1px solid $btmBrandColor
+                p:nth-child(1)
+                    margin: 0
+                    text-align: center
+                    width: 50%
+                p:nth-child(3)
+                    margin: 0
+                    text-align: center
+                    color: $blackText
+                    width: 50%
+            .car--submit--btm
+                border: none
+                width: 100%
+                size: 20px
+                padding: 10px 40px
+                font-family: $fontText
+                color: $whiteColor
+                cursor: pointer
+                background-color: $btmBrandColor
+    .selected
+        background-color: $btmBrandColor
+        color: $whiteColor
