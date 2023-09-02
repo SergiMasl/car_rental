@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/car_rental/static/css/main.46f120c5.css",
-    "main.js": "/car_rental/static/js/main.e53bbb7b.js",
-    "static/media/audi_A1_S-Line.png": "/car_rental/static/media/audi_A1_S-Line.db65d5a970d440c386d2.png",
+    "main.css": "/car_rental/static/css/main.8a197b97.css",
+    "main.js": "/car_rental/static/js/main.64afda07.js",
+    "static/media/audi_A1_S_Line.png": "/car_rental/static/media/audi_A1_S_Line.db65d5a970d440c386d2.png",
+    "static/media/vw_colf_6.png": "/car_rental/static/media/vw_colf_6.9086432e457d2f434e3e.png",
     "static/media/car-main-logo.png": "/car_rental/static/media/car-main-logo.95103434c4031acc1096.png",
+    "static/media/2.jpg": "/car_rental/static/media/2.83be598174b2f640f8ef.jpg",
+    "static/media/4.jpg": "/car_rental/static/media/4.3a6b22ad23869a33cf89.jpg",
+    "static/media/8.jpg": "/car_rental/static/media/8.8136973c8944e20eca38.jpg",
+    "static/media/1.jpg": "/car_rental/static/media/1.4558f783896f7b6a7cf9.jpg",
+    "static/media/9.jpg": "/car_rental/static/media/9.48013ad21bd863ad6a08.jpg",
+    "static/media/5.jpg": "/car_rental/static/media/5.51b80a990ae55ca514a4.jpg",
+    "static/media/7.jpg": "/car_rental/static/media/7.fddecc735c7a5edaea88.jpg",
+    "static/media/6.jpg": "/car_rental/static/media/6.7a4eb7d5c9c247af1da0.jpg",
+    "static/media/3.jpg": "/car_rental/static/media/3.568e8abba489f3fdafbd.jpg",
     "static/media/car-svg--logo.svg": "/car_rental/static/media/car-svg--logo.1354fb2e6410b6bacc27e7b9fc147990.svg",
     "index.html": "/car_rental/index.html",
-    "main.46f120c5.css.map": "/car_rental/static/css/main.46f120c5.css.map",
-    "main.e53bbb7b.js.map": "/car_rental/static/js/main.e53bbb7b.js.map"
+    "main.8a197b97.css.map": "/car_rental/static/css/main.8a197b97.css.map",
+    "main.64afda07.js.map": "/car_rental/static/js/main.64afda07.js.map"
   },
   "entrypoints": [
-    "static/css/main.46f120c5.css",
-    "static/js/main.e53bbb7b.js"
+    "static/css/main.8a197b97.css",
+    "static/js/main.64afda07.js"
   ]
 }
