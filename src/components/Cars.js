@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../styles/_cars.sass";
-import car1 from "../styles/img/cars/audi_A1_S-Line.png";
 import carList from "../fake-back-end/car_list.json";
 
 const Cars = () => {
   const [carInFocus, setCarInFocus] = useState("audi_A1_S_Line");
-
+  const [currentImageIndex, setCurrentImageIndex] = useState("audi_A1_S_Line");
+  console.log(currentImageIndex);
   const handleCarClick = (carId) => {
+    setCurrentImageIndex(carId);
     setCarInFocus(carId);
   };
 
@@ -35,22 +36,24 @@ const Cars = () => {
             ))}
           </div>
           <div>
-            <img src={car1} alt={carInFocus} />
+            <img
+              src={require(`../styles/img/cars/${currentImageIndex}.png`)}
+              alt={carInFocus}
+            />
           </div>
           <div className="car-info-detals--wrap">
             <div>
               <div className="car-price">
                 <p className="car-price--info">
-                  Price:{" "}
-                  {carList.find((item) => item.carId === carInFocus).price}
+                  Price: $
+                  {carList.find((item) => item.carId === carInFocus).price} /
+                  day
                 </p>
               </div>
               <div className="car-info--detals">
                 <p>Model</p>
                 <span>|</span>
-                <p>
-                  ${carList.find((item) => item.carId === carInFocus).Model}
-                </p>
+                <p>{carList.find((item) => item.carId === carInFocus).Model}</p>
               </div>
               <div className="car-info--detals">
                 <p>Mark</p>

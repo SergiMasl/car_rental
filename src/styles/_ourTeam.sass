@@ -1,0 +1,59 @@
+@import './_variables'
+@import './_extensional'
+
+.container-our-team
+    @include container(100%, 100vh, center, column)
+    .our-team--banner
+        @include container(100%, auto, center, column)
+        width: 100%
+        padding: 30px 0
+        background-color: $blackText
+        margin-bottom: 40px
+        h2
+            @include textFormation($fontText, $whiteColor, 900, 40px)
+            margin-bottom: 15px
+        p
+            @include textFormation($fontText, $whiteColor, 300, 40px)
+        span
+            @include textFormation($fontText, $redColor, 300, 20px)
+    .our-team--wrapper
+        width: 300px
+        img
+            width: 100%
+    .deal-info-section
+        @include container(900px, auto, space-between, row)
+        align-items: start
+        div:nth-child(1)
+            width: 43%
+            h4
+                @include textFormation($fontText, $blackText, 500, 18px)
+                margin-bottom: 15px
+            h3
+                @include textFormation($fontText, $blackText, 900, 20px)
+                margin-bottom: 15px
+            p
+                @include textFormation($fontText, $greyColor, 300, 15px)
+                margin-bottom: 15px
+        div:nth-child(2)
+            width: 43%
+            .deal-info-wrap
+                @include container(100%, auto, start, row)
+                padding: 0
+                img
+                    width: 70px
+                div
+                    width: 100%
+                    margin-left: 30px
+                    flex-direction: column
+                    align-items: start
+
+                    h4
+                        @include textFormation($fontText, $blackText, 500, 30px)
+                        margin: 0
+                        margin-bottom: 8px
+                    p
+                        @include textFormation($fontText, $greyColor,300, 15px)
+                        margin-bottom: 15px
+
+    button
+        @include btn($btmBrandColor, $whiteColor, $fontText, 0, 10px 20px, 20px, none, 300px )

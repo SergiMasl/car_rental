@@ -1,0 +1,49 @@
+@import './_variables'
+@import './_extensional'
+
+.review-wrap
+    @include container(100%, auto, center, column)
+    .review-description-section
+        @include container(100%, auto, center, column)
+        h3
+            @include textFormation($fontText, $blackText, 500, 20px)
+            margin-bottom: 10px
+        h2
+            @include textFormation($fontText, $blackText, 900, 30px)
+            margin-bottom: 10px
+        p
+            @include textFormation($fontText, $greyColor, 300, 18)
+            margin-bottom: 30px
+            text-align: center
+    .review-section
+        @include container(100%, auto, space-between, row)
+        div
+            @include container(47%, auto, start, column)
+            overflow: scroll
+            .review-item-text
+                width: 100%
+                h5
+                    @include textFormation($fontText, $blackText, 500, 20px)
+                p
+                    @include textFormation($fontText, $blackText, 300, 15px)
+                    height: 150px
+            .review-item-client--info
+                margin-top: 30px
+                @include container(100%, auto, center, row)
+                div
+                    @include container(100%, auto, start, row)
+
+                    img
+                        width: 50px
+                        margin-right: 10px
+                    .client-name
+                        @include container(100%, auto, start, column)
+                        @include textFormation($fontText, $blackText, 300, 15px)
+                        align-items: start
+
+                .rate
+                    justify-content: end
+                    p
+                        @include textFormation($fontText, $btmBrandColor, 900, 20px)
+                    span
+                        @include textFormation($fontText, $blackText, 300, 15px)

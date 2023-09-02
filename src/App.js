@@ -6,6 +6,8 @@ import "./styles/app.sass";
 import BookCar from "./components/BookCar";
 import MapOfBook from "./components/MapOfBook";
 import Cars from "./components/Cars";
+import OurTeam from "./components/OurTeam";
+import Reviewed from "./components/Reviewed";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <BookCar />
       <MapOfBook />
       <Cars />
+      <OurTeam />
+      <Reviewed />
     </div>
   );
 }

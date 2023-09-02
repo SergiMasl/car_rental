@@ -5,3 +5,20 @@
     width: $width
     height: $height
     flex-direction: $direction
+
+@mixin textFormation($fontText, $whiteColor, $FontWeight, $fontSize)
+    font-family: $fontText
+    color: $whiteColor
+    font-weight: $FontWeight
+    font-size: $fontSize
+
+@mixin btn($bg-color, $color, $fontText, $b-radius, $padding, $size, $border, $width)
+    background-color: $bg-color
+    width: $width
+    border: $border
+    size: $size
+    padding: $padding
+    border-radius: $b-radius
+    font-family: $fontText
+    color: $color
+    cursor: pointer

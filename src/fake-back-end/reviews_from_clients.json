@@ -1,0 +1,20 @@
+[
+    {"id":"1","client_name":"Alex Brown","city":"Dallas", "rate":"3","text":"My recent car rental experience was exceptional. The rental agency had a wide range of vehicles to choose from, and the staff was friendly and efficient. I was in and out in no time, and the car was in pristine condition. A hassle-free experience from start to finish.",
+    "title":"Exceptional Service and Selection", "img":"1"},
+    {"id":"2","client_name":"Pam White","city":"Novi Sad", "rate":"4", "text":"Renting a car couldn't have been easier. The online booking process was straightforward, and the prices were competitive. When I arrived at the rental location, my car was ready to go, clean, and fueled up. It made my trip stress-free and cost-effective.",
+    "title":"Affordable and Convenient","img":"2"},
+    {"id":"3","client_name":"Sam Ali", "city":"New York","rate":"5", "text":"The standout feature of my recent car rental was the exceptional customer service. The staff went above and beyond to ensure I had a great experience. They answered all my questions, provided valuable local tips, and even helped me with my luggage. It was truly a pleasure doing business with them.",
+    "title":"Top-Notch Customer Service","img":"5"},
+    {"id":"4","client_name":"John Smith", "city":"LA","rate":"5", "text":"Time is of the essence when traveling, and this car rental agency understood that perfectly. The check-in process was lightning fast, and I was on the road within minutes of arriving. Their efficiency saved me valuable vacation time, and I appreciated it immensely.",
+    "title":"Efficient and Speedy Check-In","img":"3"},
+    {"id":"5","client_name":"Kim Yang", "city":"Dallas","rate":"4", "text":"The cleanliness and maintenance of the rental car exceeded my expectations. It felt like I was driving a brand-new vehicle. Knowing that the car was in excellent condition gave me peace of mind during my journey.",
+    "title":"Clean and Well-Maintained Cars","img":"4"},
+    {"id":"6","client_name":"Alex Jonson","city":"Seattle","rate":"4", "text":"My car rental experience was made even better by the flexibility in returning the vehicle. I was able to drop it off at a different location than where I picked it up, which made my trip itinerary more convenient and efficient.",
+    "title":"Flexible Return Options","img":"8"},
+    {"id":"7","client_name":"Hassan J","city":"LA", "rate":"4", "text":"Nothing is worse than getting hit with unexpected fees when renting a car. Fortunately, this rental agency was transparent about their pricing, and there were no surprises. The final bill matched the initial quote, which was a refreshing change from past experiences with other rental companies.",
+    "title":"No Hidden Fees","img":"6"},
+    {"id":"8","client_name":"Alisa Jonson","city":"Maimi", "rate":"4", "text":"My recent car rental left much to be desired. The vehicle I received had seen better days; it was old and showed significant signs of wear and tear. The check-in process at the rental counter was slow and disorganized, and I had to wait longer than expected. Additionally, the final bill included unexpected fees that were not clearly communicated during the booking process, leaving me frustrated and dissatisfied.",
+    "title":"A Smooth and Convenient Rental","img":"4"},
+    {"id":"9","client_name":"Mark Alb","city":"Orlando", "rate":"4", "text":"Renting a car with this agency was a breeze. The online reservation process was straightforward, and when I arrived at the rental location, the car was ready and waiting for me. It was clean, well-maintained, and performed excellently throughout my trip. The staff was friendly and efficient, and there were no surprises when it came to the final cost. Overall, a hassle-free and pleasant rental experience.",
+    "title":"No Hidden Fees","img":"6"}
+]
