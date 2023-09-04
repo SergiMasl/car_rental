@@ -3,28 +3,84 @@
 
 .container-our-team
     @include container(100%, 100vh, center, column)
+    @media  (min-width: 40px) and (max-width: 500px)
+        height: auto
+    @media  (min-width: 501px) and (max-width: 905px)
+        height: auto
+
     .our-team--banner
         @include container(100%, auto, center, column)
         width: 100%
         padding: 30px 0
         background-color: $blackText
         margin-bottom: 40px
+
+        @media  (min-width: 40px) and (max-width: 500px)
+            padding: 10px 0
+            margin-bottom: 20px
+        @media  (min-width: 501px) and (max-width: 905px)
+            font-size: 30px
+
         h2
             @include textFormation($fontText, $whiteColor, 900, 40px)
             margin-bottom: 15px
+
+            @media  (min-width: 40px) and (max-width: 500px)
+                font-size: 20px
+                margin-bottom: 10px
+            @media  (min-width: 501px) and (max-width: 905px)
+                font-size: 30px
         p
             @include textFormation($fontText, $whiteColor, 300, 40px)
+
+            @media  (min-width: 40px) and (max-width: 500px)
+                font-size: 15px
+            @media  (min-width: 501px) and (max-width: 905px)
+                font-size: 20px
         span
-            @include textFormation($fontText, $redColor, 300, 20px)
+            @include textFormation($fontText, $redColor, 500, 40px)
+
+            @media  (min-width: 40px) and (max-width: 500px)
+                font-size: 15px
+            @media  (min-width: 501px) and (max-width: 905px)
+                font-size: 20px
     .our-team--wrapper
-        width: 300px
+        width: 700px
+        max-width: 100%
+
+        @media  (min-width: 40px) and (max-width: 500px)
+            width: 90%
+        @media  (min-width: 501px) and (max-width: 905px)
+            width: 90%
         img
             width: 100%
+
     .deal-info-section
         @include container(900px, auto, space-between, row)
         align-items: start
+
+        @media  (min-width: 40px) and (max-width: 500px)
+            flex-direction: column
+            width: 90%
+        @media  (min-width: 501px) and (max-width: 905px)
+            width: 90%
+            flex-direction: column
+            justify-content: center
+
+        div
+            @media  (min-width: 40px) and (max-width: 905px)
+                align-items: center
+                display: flex
+                flex-direction: column
+
         div:nth-child(1)
             width: 43%
+            @media  (min-width: 40px) and (max-width: 500px)
+                width: 100%
+            @media  (min-width: 501px) and (max-width: 605px)
+                width: 100%
+            @media  (min-width: 606px) and (max-width: 905px)
+                width: 100%
             h4
                 @include textFormation($fontText, $blackText, 500, 18px)
                 margin-bottom: 15px
@@ -34,13 +90,24 @@
             p
                 @include textFormation($fontText, $greyColor, 300, 15px)
                 margin-bottom: 15px
+
         div:nth-child(2)
             width: 43%
+            @media  (min-width: 40px) and (max-width: 500px)
+                width: 100%
+            @media  (min-width: 501px) and (max-width: 905px)
+                width: 100%
+
             .deal-info-wrap
                 @include container(100%, auto, start, row)
                 padding: 0
                 img
                     width: 70px
+
+                    @media  (min-width: 40px) and (max-width: 500px)
+                        width: 35px
+                    @media  (min-width: 501px) and (max-width: 905px)
+                        width: 50px
                 div
                     width: 100%
                     margin-left: 30px
@@ -51,9 +118,22 @@
                         @include textFormation($fontText, $blackText, 500, 30px)
                         margin: 0
                         margin-bottom: 8px
+
+                        @media  (min-width: 40px) and (max-width: 500px)
+                            font-size: 20px
+                        @media (min-width: 501px) and (max-width: 905px)
+                            font-size: 24px
                     p
                         @include textFormation($fontText, $greyColor,300, 15px)
                         margin-bottom: 15px
+                        @media  (min-width: 40px) and (max-width: 500px)
+                            font-size: 13px
 
     button
-        @include btn($btmBrandColor, $whiteColor, $fontText, 0, 10px 20px, 20px, none, 300px )
+        @include btn($btmBrandColor, $whiteColor, $fontText, 5px, 10px 20px, 20px, none, 300px )
+        @media  (min-width: 40px) and (max-width: 500px)
+            width: 100%
+            margin-bottom: 20px
+        @media  (min-width: 501px) and (max-width: 905px)
+            width: 60%
+            margin-bottom: 20px

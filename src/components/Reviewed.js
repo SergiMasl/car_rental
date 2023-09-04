@@ -9,21 +9,20 @@ const Reviewed = () => {
     const fetchData = async () => {
       const clientReviews = await getClientReviews();
       setReviews(clientReviews);
-      console.log(clientReviews);
     };
 
     // Fetch client reviews initially
     fetchData();
 
     // Fetch client reviews every 3 seconds
-    const interval = setInterval(fetchData, 3000);
+    const interval = setInterval(fetchData, 3000000);
 
     // Cleanup the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="container">
+    <div className="container container-media-small">
       <div className="review-wrap">
         <div className="review-description-section">
           <h3>Reviewed by Poeple</h3>

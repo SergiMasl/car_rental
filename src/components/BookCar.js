@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import bookJson from "../fake-back-end/book-selection-options.json";
 import "../styles/bookCar.sass";
-import Logo from "../styles/img/svg/car-svg--logo.svg";
+import LogoCar from "../styles/img/svg/car-svgrepo-com.svg";
+import LogoCalendar from "../styles/img/svg/car--savg--calendar.svg";
+import LogoPin from "../styles/img/svg/map-pin-svg.svg";
 
 const BookCar = () => {
   const [formData, setFormData] = useState({});
@@ -20,7 +22,7 @@ const BookCar = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="book_a_car">
       <div className="book--wrapper">
         <h1>Book a car</h1>
         <div>
@@ -30,11 +32,22 @@ const BookCar = () => {
               return (
                 <div key={fieldName} className="book--form--input">
                   <label htmlFor={fieldName}>
-                    <img src={Logo} />
-                    {field.name}
+                    {fieldName === "carType" ? <img src={LogoCar} /> : null}
+                    {fieldName === "pickUpTime" ? (
+                      <img src={LogoCalendar} />
+                    ) : null}
+                    {fieldName === "dropOffTime" ? (
+                      <img src={LogoCalendar} />
+                    ) : null}
+                    {fieldName === "pickUpPlace" ? <img src={LogoPin} /> : null}
+                    {fieldName === "dropOffPlace" ? (
+                      <img src={LogoPin} />
+                    ) : null}
+                    <span className="title-car"> {field.name}</span>
                   </label>
                   {field.type === "select" ? (
                     <select
+                      required
                       id={fieldName}
                       value={formData[fieldName] || ""}
                       onChange={(e) =>
@@ -52,6 +65,7 @@ const BookCar = () => {
                     </select>
                   ) : field.type === "time" ? (
                     <input
+                      required
                       type="time"
                       id={fieldName}
                       value={formData[fieldName] || ""}

@@ -4,7 +4,7 @@ import Logo from "../styles/img/car-main-logo.png";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container container-home">
       <div className="home--wrapper">
         <div className="home--info">
           <p>Plan your trip now</p>

@@ -6,11 +6,17 @@
     padding: 20px 0
     position: fixed
 
+    @media (max-width: 390px)
+        flex-direction: column
+        @include container(80%, 25px, space-between, row)
+
     img
         width: 40px
 
 .header--links
     @include container(50%, auto, space-between, row)
+    @media (max-width: 390px)
+        flex-direction: column
 
 .header--link
     font-size: 10px
@@ -23,17 +29,16 @@
         font-weight: 500
 
 .header--log--wrapoer
+    @media (max-width: 390px)
+        display: flex
+        flex-direction: column
     button
-        border: none
-        width: 120px
-        size: 20px
-        padding: 5px 30px
-        border-radius: 2px
-        font-family: $fontText
-        cursor: pointer
-    button
-        background-color: #fff
+        @include btn(#fff, $blackText, $fontText, 2px, 5px 30px, 20px, none, 120px)
+
     button:nth-child(2)
         background-color: $btmBrandColor
         box-shadow: 2px 3px 8px #ffd1c0
         color: #fff
+
+.hidden
+    display: none

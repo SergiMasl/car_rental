@@ -7,6 +7,8 @@
 .book--wrapper
     @include container(100%, auto, start, column)
     align-items: start
+    @media (min-width: 40px) and (max-width: 500px)
+        width: 90%
     div
         width: 100%
 
@@ -22,13 +24,24 @@
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 40px
+
+    @media (max-width: 780px)
+        grid-template-columns: 1fr
+
     div
         @include container(200px, auto, start, column)
         align-items: start
-
+        @media (max-width: 390px)
+            width: 100%
         label
             font-family: $fontText
             margin-bottom: 10px
+
+            img
+                width: 22px
+                margin-right: 10px
+            .title-car
+                color: $blackText
 
         select
             -webkit-appearance: none
@@ -40,6 +53,8 @@
             border: none
             border-left: 2px solid $greyColor
             border-bottom: 2px solid $greyColor
+            @media (max-width: 390px)
+                width: 351px
 
         input
             font-family: $fontText
@@ -49,6 +64,8 @@
             border: none
             border-left: 2px solid $greyColor
             border-bottom: 2px solid $greyColor
+            @media (max-width: 390px)
+                width: Calc(100% - 42px)
 
     button
         background-color: $btmBrandColor
@@ -62,13 +79,11 @@
         font-family: $fontText
         color: $whiteColor
         cursor: pointer
+        @media (max-width: 390px)
+            width: 100%
 
 .book--form--input
     width: 200px
-
-img
-    width: 10px
-    margin-right: 10px
 
 // MapOfBook section:
 
@@ -87,16 +102,25 @@ img
         font-weight: 900
     div
         @include container(100%, auto, space-between, row)
+        @media  (min-width: 40px) and (max-width: 500px)
+            flex-direction: column
 
         .book--map--item
-            @include container(220px, auto, space-between, column)
+            @include container(220px, auto, space-around, column)
+            @media  (min-width: 501px) and (max-width: 700px)
+                margin: 0 30px
+                width: 110px
+                img
+                    width: 20px
+            @media  (min-width: 701px) and (max-width: 930px)
+                margin: 0 30px
             img
                 width: 50px
                 margin-bottom: 10px
             h3
                 margin-bottom: 10px
                 font-family: $fontText
-                color: $btmBrandColor
+                color: $blackText
                 text-shadow: 0 0 2px #ff000059, 0 0 1px #ff3e151f
                 margin-bottom: 15px
             p

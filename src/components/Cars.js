@@ -12,7 +12,7 @@ const Cars = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container container--cars">
       <div className="cars--wrapper">
         <p>Vehicle Models</p>
         <h2>Our Rental Fleet</h2>
@@ -43,57 +43,66 @@ const Cars = () => {
           </div>
           <div className="car-info-detals--wrap">
             <div>
-              <div className="car-price">
+              <div className="car-price class1">
                 <p className="car-price--info">
                   Price: $
-                  {carList.find((item) => item.carId === carInFocus).price} /
-                  day
+                  {carList.find((item) => item.carId === carInFocus).price}{" "}
+                  <br />/ day
                 </p>
               </div>
-              <div className="car-info--detals">
-                <p>Model</p>
-                <span>|</span>
-                <p>{carList.find((item) => item.carId === carInFocus).Model}</p>
-              </div>
-              <div className="car-info--detals">
-                <p>Mark</p>
-                <span>|</span>
-                <p> {carList.find((item) => item.carId === carInFocus).Mark}</p>
-              </div>
-              <div className="car-info--detals">
-                <p>Yea</p>
-                <span>|</span>
-                <p>{carList.find((item) => item.carId === carInFocus).Year}</p>
-              </div>
-              <div className="car-info--detals">
-                <p>Doors</p>
-                <span>|</span>
-                <p>{carList.find((item) => item.carId === carInFocus).Doors}</p>
-              </div>
-              <div className="car-info--detals">
-                <p>A/C</p>
-                <span>|</span>
-                <p> {carList.find((item) => item.carId === carInFocus).AC}</p>
-              </div>
-              <div className="car-info--detals">
-                <p>Transmission</p>
-                <span>|</span>
-                <p>
-                  {
-                    carList.find((item) => item.carId === carInFocus)
-                      .Transmission
-                  }
-                </p>
-              </div>
-              <div className="car-info--detals">
-                <p>Flue</p>
-                <span>|</span>
-                <p> {carList.find((item) => item.carId === carInFocus).Flue}</p>
+              <div className="car-info-detals--container">
+                <div className="car-info--detals class2">
+                  <p>Model</p>
+                  <span>|</span>
+                  <p>
+                    {carList.find((item) => item.carId === carInFocus).Model}
+                  </p>
+                </div>
+                <div className="car-info--detals class3">
+                  <p>Mark</p>
+                  <span>|</span>
+                  <p>
+                    {carList.find((item) => item.carId === carInFocus).Mark}
+                  </p>
+                </div>
+                <div className="car-info--detals class4">
+                  <p>Yea</p>
+                  <span>|</span>
+                  <p>
+                    {carList.find((item) => item.carId === carInFocus).Year}
+                  </p>
+                </div>
+                <div className="car-info--detals class5">
+                  <p>Doors</p>
+                  <span>|</span>
+                  <p>
+                    {carList.find((item) => item.carId === carInFocus).Doors}
+                  </p>
+                </div>
+                <div className="car-info--detals class6">
+                  <p>A/C</p>
+                  <span>|</span>
+                  <p> {carList.find((item) => item.carId === carInFocus).AC}</p>
+                </div>
+                <div className="car-info--detals class7">
+                  <p>Transmission</p>
+                  <span>|</span>
+                  <p>
+                    {
+                      carList.find((item) => item.carId === carInFocus)
+                        .Transmission
+                    }
+                  </p>
+                </div>
+                <div className="car-info--detals">
+                  <p>Flue</p>
+                  <span>|</span>
+                  <p>
+                    {carList.find((item) => item.carId === carInFocus).Flue}
+                  </p>
+                </div>
               </div>
             </div>
-            <button className="car--submit--btm" type="submit">
-              Reserve Now
-            </button>
           </div>
         </div>
       </div>

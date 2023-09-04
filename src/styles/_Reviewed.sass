@@ -1,49 +1,98 @@
 @import './_variables'
 @import './_extensional'
+.container-media-small
 
-.review-wrap
-    @include container(100%, auto, center, column)
-    .review-description-section
+    @media  (min-width: 40px) and (max-width: 700px)
+        height: auto
+    @media  (min-width: 701px) and (max-width: 905px)
+        height: auto
+        width: 90%
+
+    .review-wrap
         @include container(100%, auto, center, column)
-        h3
-            @include textFormation($fontText, $blackText, 500, 20px)
-            margin-bottom: 10px
-        h2
-            @include textFormation($fontText, $blackText, 900, 30px)
-            margin-bottom: 10px
-        p
-            @include textFormation($fontText, $greyColor, 300, 18)
-            margin-bottom: 30px
-            text-align: center
-    .review-section
-        @include container(100%, auto, space-between, row)
-        div
-            @include container(47%, auto, start, column)
-            overflow: scroll
-            .review-item-text
-                width: 100%
-                h5
-                    @include textFormation($fontText, $blackText, 500, 20px)
-                p
-                    @include textFormation($fontText, $blackText, 300, 15px)
-                    height: 150px
-            .review-item-client--info
-                margin-top: 30px
-                @include container(100%, auto, center, row)
-                div
-                    @include container(100%, auto, start, row)
+        @media  (min-width: 40px) and (max-width: 700px)
+            width: 90%
+        .review-description-section
+            @include container(100%, auto, center, column)
+            h3
+                @include textFormation($fontText, $blackText, 500, 20px)
+                margin-bottom: 10px
+                @media  (min-width: 40px) and (max-width: 700px)
+                    @include textMedia(15px)
 
-                    img
-                        width: 50px
-                        margin-right: 10px
-                    .client-name
-                        @include container(100%, auto, start, column)
-                        @include textFormation($fontText, $blackText, 300, 15px)
-                        align-items: start
+            h2
+                @include textFormation($fontText, $blackText, 900, 30px)
+                margin-bottom: 10px
+                text-align: center
+                @media  (min-width: 40px) and (max-width: 700px)
+                    font-size: 18px
+            p
+                @include textFormation($fontText, $greyColor, 300, 18px)
+                margin-bottom: 30px
+                text-align: center
 
-                .rate
-                    justify-content: end
+                @media  (min-width: 40px) and (max-width: 700px)
+                    @include textMedia(12px)
+                    text-align: start
+                    margin-bottom: 12px
+
+        .review-section
+            @include container(100%, auto, space-between, row)
+
+            @media  (min-width: 40px) and (max-width: 700px)
+                flex-direction: column
+
+            div
+                @include container(47%, auto, start, column)
+                overflow: scroll
+
+                @media  (min-width: 40px) and (max-width: 700px)
+                    width: 100%
+
+                .review-item-text
+                    width: 100%
+                    h5
+                        @include textFormation($fontText, $blackText, 500, 20px)
+
+                        @media  (min-width: 40px) and (max-width: 700px)
+                            margin: 20px 0
+
                     p
-                        @include textFormation($fontText, $btmBrandColor, 900, 20px)
-                    span
                         @include textFormation($fontText, $blackText, 300, 15px)
+                        height: 160px
+                        background-color: #d7d2d217
+                        padding: 5px
+
+                        @media  (min-width: 40px) and (max-width: 500px)
+                            font-size: 12px
+                        @media  (min-width: 501px) and (max-width: 700px)
+                            height: 100px
+
+                .review-item-client--info
+                    margin-top: 30px
+                    @include container(100%, auto, center, row)
+
+                    @media  (min-width: 40px) and (max-width: 700px)
+                        border-bottom: 1px solid grey
+                        padding-bottom: 10px
+
+                    div
+                        @include container(100%, auto, start, row)
+
+                        img
+                            border: 1px solid red
+                            border-radius: 50px
+                            padding: 5px
+                            width: 50px
+                            margin-right: 10px
+                        .client-name
+                            @include container(100%, auto, start, column)
+                            @include textFormation($fontText, $blackText, 300, 15px)
+                            align-items: start
+
+                    .rate
+                        justify-content: end
+                        p
+                            @include textFormation($fontText, $btmBrandColor, 900, 20px)
+                        span
+                            @include textFormation($fontText, $blackText, 300, 15px)

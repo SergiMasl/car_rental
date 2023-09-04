@@ -1,5 +1,6 @@
 import "../styles/_ourTeam.sass";
-import Logo from "../styles/img/svg/car-svg--logo.svg";
+import Logo from "../styles/img/banner-cars.png";
+
 import dealInfo from "../fake-back-end/dealInfo.json";
 
 const OurTeam = () => {
@@ -30,7 +31,7 @@ const OurTeam = () => {
         <div>
           {dealInfo.map((i) => (
             <div className="deal-info-wrap" key={i.id}>
-              <img src={Logo} />
+              <img src={require(`../styles/img/svg/${i.img}.svg`)} />
               <div>
                 <h4>{i.title}</h4>
                 <p>{i.text}</p>

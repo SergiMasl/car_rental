@@ -1,4 +1,5 @@
 @mixin container($width, $height,$justCont, $direction)
+    max-width: 100%
     display: flex
     align-items: center
     justify-content: $justCont
@@ -22,3 +23,6 @@
     font-family: $fontText
     color: $color
     cursor: pointer
+
+@mixin textMedia($fontSize)
+    font-size: $fontSize

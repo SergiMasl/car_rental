@@ -1,19 +1,19 @@
 [
     {
       "id": 1,
-      "img": "logo",
+      "img": "cross",
       "title": "Cross Country Drive",
       "text": "Take your driving experience to the next level with out top-notch vehicles for your cross-country adventures."
     },
     {
       "id": 2,
-      "img": "logo",
+      "img": "money",
       "title": "All Inclusive Pricing",
       "text": " Get everything you need in one convenient, transparent price with our all-inclusive pricing policy."
     },
     {
       "id": 3,
-      "img": "logo",
+      "img": "save",
       "title": "No Hidden Charges",
       "text": "Enjoy peace of mind with our no hiden charges policy. We belive in transparent and honest pricing."
     }

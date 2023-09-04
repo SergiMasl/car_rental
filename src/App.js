@@ -8,17 +8,20 @@ import MapOfBook from "./components/MapOfBook";
 import Cars from "./components/Cars";
 import OurTeam from "./components/OurTeam";
 import Reviewed from "./components/Reviewed";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Home />
       <BookCar />
       <MapOfBook />
       <Cars />
       <OurTeam />
       <Reviewed />
+
+      <Footer />
     </div>
   );
 }
