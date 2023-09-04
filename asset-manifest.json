@@ -1,12 +1,21 @@
 {
   "files": {
-    "main.css": "/car_rental/static/css/main.8a197b97.css",
-    "main.js": "/car_rental/static/js/main.64afda07.js",
+    "main.css": "/car_rental/static/css/main.e0de2309.css",
+    "main.js": "/car_rental/static/js/main.fb6c096b.js",
     "static/media/audi_A1_S_Line.png": "/car_rental/static/media/audi_A1_S_Line.db65d5a970d440c386d2.png",
+    "static/media/audi_cab.png": "/car_rental/static/media/audi_cab.f679ad64e2c4895f3f35.png",
     "static/media/vw_colf_6.png": "/car_rental/static/media/vw_colf_6.9086432e457d2f434e3e.png",
+    "static/media/bmw_x3.png": "/car_rental/static/media/bmw_x3.9388af7377077aebe6c0.png",
+    "static/media/toyota_landcruse_prado.png": "/car_rental/static/media/toyota_landcruse_prado.88be82d0e7abf886d800.png",
+    "static/media/Mercedes_g.png": "/car_rental/static/media/Mercedes_g.8a7ed23d774a79f2b5d1.png",
     "static/media/car-main-logo.png": "/car_rental/static/media/car-main-logo.95103434c4031acc1096.png",
+    "static/media/porsh_910.png": "/car_rental/static/media/porsh_910.516991cd5974fed30e8c.png",
+    "static/media/banner-cars.png": "/car_rental/static/media/banner-cars.18596142c955aebf29b5.png",
+    "static/media/apple.png": "/car_rental/static/media/apple.f433b823eec0301ec373.png",
+    "static/media/app-footer.png": "/car_rental/static/media/app-footer.32070c7c86d3b65d27b1.png",
     "static/media/2.jpg": "/car_rental/static/media/2.83be598174b2f640f8ef.jpg",
     "static/media/4.jpg": "/car_rental/static/media/4.3a6b22ad23869a33cf89.jpg",
+    "static/media/google.png": "/car_rental/static/media/google.1f14921833077eb32a6a.png",
     "static/media/8.jpg": "/car_rental/static/media/8.8136973c8944e20eca38.jpg",
     "static/media/1.jpg": "/car_rental/static/media/1.4558f783896f7b6a7cf9.jpg",
     "static/media/9.jpg": "/car_rental/static/media/9.48013ad21bd863ad6a08.jpg",
@@ -15,12 +24,22 @@
     "static/media/6.jpg": "/car_rental/static/media/6.7a4eb7d5c9c247af1da0.jpg",
     "static/media/3.jpg": "/car_rental/static/media/3.568e8abba489f3fdafbd.jpg",
     "static/media/car-svg--logo.svg": "/car_rental/static/media/car-svg--logo.1354fb2e6410b6bacc27e7b9fc147990.svg",
+    "static/media/save.svg": "/car_rental/static/media/save.fd2d2f5e32925f35ad0d.svg",
+    "static/media/money.svg": "/car_rental/static/media/money.08fc8a34b35bb2d66ed9.svg",
+    "static/media/select_car.svg": "/car_rental/static/media/select_car.0a4813179c7638f906ac886e6ceca95f.svg",
+    "static/media/support.svg": "/car_rental/static/media/support.31c86f55335ab902579748ae66029144.svg",
+    "static/media/map-pin-svg.svg": "/car_rental/static/media/map-pin-svg.df1f6dbfabee7e60d0398afa65cde657.svg",
+    "static/media/cross.svg": "/car_rental/static/media/cross.9fe4ffb6c1869f750b72.svg",
+    "static/media/car-svgrepo-com.svg": "/car_rental/static/media/car-svgrepo-com.a14d9196b29ff8c40788c54bb0375e90.svg",
+    "static/media/lets_drive.svg": "/car_rental/static/media/lets_drive.adb3febbd28e7ec36f767dbf91a354e8.svg",
+    "static/media/car--savg--calendar.svg": "/car_rental/static/media/car--savg--calendar.488957136fd92df709676166ba9afbba.svg",
+    "static/media/burger-menu-svgrepo-com.svg": "/car_rental/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
     "index.html": "/car_rental/index.html",
-    "main.8a197b97.css.map": "/car_rental/static/css/main.8a197b97.css.map",
-    "main.64afda07.js.map": "/car_rental/static/js/main.64afda07.js.map"
+    "main.e0de2309.css.map": "/car_rental/static/css/main.e0de2309.css.map",
+    "main.fb6c096b.js.map": "/car_rental/static/js/main.fb6c096b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a197b97.css",
-    "static/js/main.64afda07.js"
+    "static/css/main.e0de2309.css",
+    "static/js/main.fb6c096b.js"
   ]
 }
