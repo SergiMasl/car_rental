@@ -20,7 +20,6 @@ function App() {
       <Cars />
       <OurTeam />
       <Reviewed />
-
       <Footer />
     </div>
   );

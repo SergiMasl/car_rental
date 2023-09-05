@@ -13,22 +13,46 @@ const Header = () => {
   const links = (
     <>
       <div className="header--links">
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#home"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           Home
         </a>
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#about"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           About
         </a>
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#book"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           Book a Car
         </a>
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#cars"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           Vehical Models
         </a>
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#team"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           Our Team
         </a>
-        <a hrefg="#" className="header--link">
+        <a
+          hrefg="#contact"
+          className="header--link"
+          onClick={() => setBurgerBtm()}
+        >
           Contact
         </a>
       </div>
@@ -44,16 +68,18 @@ const Header = () => {
   } mobileTransition`;
 
   return (
-    <div className="header--container ">
-      <img src={Logo} />
+    <div className="header-wrapper">
+      <div className="header--container ">
+        <img src={Logo} />
 
-      <div className="destop">{links}</div>
-      <div className="mobile">
-        <div className={mobileSideBarClass}>{links}</div>
-      </div>
+        <div className="destop">{links}</div>
+        <div className="mobile">
+          <div className={mobileSideBarClass}>{links}</div>
+        </div>
 
-      <div className="header--burger-log" onClick={() => setBurgerBtm()}>
-        <img src={BurderMenu} />
+        <div className="header--burger-log" onClick={() => setBurgerBtm()}>
+          <img src={BurderMenu} />
+        </div>
       </div>
     </div>
   );

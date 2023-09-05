@@ -1,11 +1,17 @@
 @import './_variables'
 @import './_extensional'
 
+.header-wrapper
+    @include container(100%, 70px, center, row)
+    background-color: $whiteColor
+    align-items: start
+    position: fixed
+
 .header--container
     @include container(900px, 30px, space-between, row)
     padding: 20px 0
     position: fixed
-    background-color: $whiteColor
+
     @media (max-width: 900px)
         width: 90%
 
@@ -15,6 +21,7 @@
 
     img
         width: 40px
+        margin-right: 10px
 
 .header--links
 
@@ -86,6 +93,7 @@
             padding-left: 0
 
     .header--log--wrapper
+        @media (max-width: 901px)
         @include container(100%, auto, center, column)
         align-items: start
         margin-left: 40px
@@ -93,3 +101,6 @@
             width: 70%
         button:nth-child(1)
             margin-bottom: 30px
+
+        @media (max-width: 900px)
+            display: none
