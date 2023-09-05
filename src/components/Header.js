@@ -4,11 +4,15 @@ import Logo from "../styles/img/svg/car-svg--logo.svg";
 import BurderMenu from "../styles/img/svg/burger-menu-svgrepo-com.svg";
 
 const Header = () => {
-  return (
-    <div className="header--container ">
-      <img src={Logo} />
+  const [isActiveBurger, setActiveBurger] = useState(false);
+  const setBurgerBtm = () => {
+    // !isActiveBurger ? setActiveBurger(true) : setActiveBurger(false);
+    setActiveBurger(!isActiveBurger);
+  };
 
-      <div className="header--links hidden">
+  const links = (
+    <>
+      <div className="header--links">
         <a hrefg="#" className="header--link">
           Home
         </a>
@@ -28,11 +32,27 @@ const Header = () => {
           Contact
         </a>
       </div>
-      <div className="header--log--wrapoer hidden">
+      <div className="header--log--wrapper">
         <button>Sign In</button>
         <button>Sign Up</button>
       </div>
-      <div className="header--log--wrapoer">
+    </>
+  );
+
+  const mobileSideBarClass = ` ${
+    isActiveBurger == false ? "hidden" : "active"
+  } mobileTransition`;
+
+  return (
+    <div className="header--container ">
+      <img src={Logo} />
+
+      <div className="destop">{links}</div>
+      <div className="mobile">
+        <div className={mobileSideBarClass}>{links}</div>
+      </div>
+
+      <div className="header--burger-log" onClick={() => setBurgerBtm()}>
         <img src={BurderMenu} />
       </div>
     </div>

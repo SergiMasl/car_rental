@@ -5,33 +5,37 @@
     @include container(900px, 30px, space-between, row)
     padding: 20px 0
     position: fixed
+    background-color: $whiteColor
+    @media (max-width: 900px)
+        width: 90%
 
-    @media (max-width: 390px)
-        flex-direction: column
-        @include container(80%, 25px, space-between, row)
+    // @media (max-width: 390px)
+    //     flex-direction: column
+    //     @include container(80%, 25px, space-between, row)
 
     img
         width: 40px
 
 .header--links
-    @include container(50%, auto, space-between, row)
+
+    @include container(100%, auto, space-between, row)
     @media (max-width: 390px)
         flex-direction: column
 
 .header--link
+    width: 83px
     font-size: 10px
     font-family: $fontText
     padding: 5px 10px
     cursor: pointer
     font-weight: 300
     &:hover
-        font-size: 20px
+        font-size: 12px
+        transition: font-size 0.15s, font-weight 0.15s
         font-weight: 500
 
-.header--log--wrapoer
-    @media (max-width: 390px)
-        display: flex
-        flex-direction: column
+.header--log--wrapper
+    display: flex
     button
         @include btn(#fff, $blackText, $fontText, 2px, 5px 30px, 20px, none, 120px)
 
@@ -40,5 +44,52 @@
         box-shadow: 2px 3px 8px #ffd1c0
         color: #fff
 
-.hidden
+.header--burger-log
+    @media (min-width: 900px)
+        display: none
+
+.destop
+    @media (max-width: 900px)
+        display: none
+    @media (min-width: 901px)
+        @include container(100%, auto, space-around, row)
+
+.mobile
     display: none
+    @media (max-width: 900px)
+        display: flex
+
+    .hidden
+        transform: translateX(-100%)
+
+    .active
+        transform: translateX(0)
+
+.mobileTransition
+    @include container(71%, auto, center, column)
+    align-items: start
+    transition: all 0.5s
+    background-color: #000000
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+
+    .header--links
+        @include container(100%, auto, start, column)
+        margin-left: 40px
+        margin-bottom: 30px
+        .header--link
+            width: 100%
+            @include textFormation($fontText, $whiteColor, 500, 20px)
+
+            padding-left: 0
+
+    .header--log--wrapper
+        @include container(100%, auto, center, column)
+        align-items: start
+        margin-left: 40px
+        button
+            width: 70%
+        button:nth-child(1)
+            margin-bottom: 30px

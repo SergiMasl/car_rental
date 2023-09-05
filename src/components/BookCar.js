@@ -22,7 +22,7 @@ const BookCar = () => {
   };
 
   return (
-    <div className="container" id="book_a_car">
+    <div className="container-book" id="book_a_car">
       <div className="book--wrapper">
         <h1>Book a car</h1>
         <div>
