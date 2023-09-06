@@ -5,7 +5,7 @@ import dealInfo from "../fake-back-end/dealInfo.json";
 
 const OurTeam = () => {
   return (
-    <div className="container-our-team">
+    <div className="container-our-team" id="team">
       <div className="our-team--banner">
         <h2>Save big with our cheap car rental!</h2>
         <p>

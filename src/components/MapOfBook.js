@@ -22,7 +22,7 @@ const MapOfBook = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container" id="about">
       <div className="book--map">
         <p>Plan your trip now</p>
         <h2>Quick & easy car rental</h2>

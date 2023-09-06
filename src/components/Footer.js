@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="container--footer">
+    <div className="container--footer" id="contact">
       <div className="footer--wrapper">
         <div>
           <div className="footer--info">

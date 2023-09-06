@@ -15,31 +15,27 @@
     @media (max-width: 900px)
         width: 90%
 
-    // @media (max-width: 390px)
-    //     flex-direction: column
-    //     @include container(80%, 25px, space-between, row)
+    @media (max-width: 390px)
+        flex-direction: column
+        @include container(80%, 25px, space-between, row)
 
     img
         width: 40px
         margin-right: 10px
-
-.header--links
-
-    @include container(100%, auto, space-between, row)
-    @media (max-width: 390px)
-        flex-direction: column
-
-.header--link
-    width: 83px
-    font-size: 10px
-    font-family: $fontText
-    padding: 5px 10px
-    cursor: pointer
-    font-weight: 300
-    &:hover
-        font-size: 12px
-        transition: font-size 0.15s, font-weight 0.15s
-        font-weight: 500
+    .header--links
+        width: 460px
+        .header--link
+            color: #000000
+            font-size: 13px
+            font-family: "Roboto", sans-serif
+            padding: 5px 10px
+            text-decoration: none
+            cursor: pointer
+            font-weight: 300
+            width: 83px
+            &:hover
+                color: $greyColor
+                transition: color 0.15s,
 
 .header--log--wrapper
     display: flex

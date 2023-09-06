@@ -13,43 +13,27 @@ const Header = () => {
   const links = (
     <>
       <div className="header--links">
-        <a
-          hrefg="#home"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
+        <a href="#home" className="header--link" onClick={() => setBurgerBtm()}>
           Home
         </a>
         <a
-          hrefg="#about"
+          href="#about"
           className="header--link"
           onClick={() => setBurgerBtm()}
         >
           About
         </a>
-        <a
-          hrefg="#book"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
+        <a href="#book" className="header--link" onClick={() => setBurgerBtm()}>
           Book a Car
         </a>
-        <a
-          hrefg="#cars"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
+        <a href="#cars" className="header--link" onClick={() => setBurgerBtm()}>
           Vehical Models
         </a>
-        <a
-          hrefg="#team"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
+        <a href="#team" className="header--link" onClick={() => setBurgerBtm()}>
           Our Team
         </a>
         <a
-          hrefg="#contact"
+          href="#contact"
           className="header--link"
           onClick={() => setBurgerBtm()}
         >

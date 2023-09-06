@@ -12,7 +12,7 @@ const Cars = () => {
   };
 
   return (
-    <div className="container container--cars">
+    <div className="container container--cars" id="cars">
       <div className="cars--wrapper">
         <p>Vehicle Models</p>
         <h2>Our Rental Fleet</h2>

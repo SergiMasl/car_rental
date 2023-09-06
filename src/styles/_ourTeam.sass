@@ -2,7 +2,8 @@
 @import './_extensional'
 
 .container-our-team
-    @include container(100%, 100vh, center, column)
+    @include container(100%, auto, center, column)
+    margin-top: 70px
     @media  (min-width: 40px) and (max-width: 500px)
         height: auto
     @media  (min-width: 501px) and (max-width: 905px)
@@ -10,6 +11,7 @@
 
     .our-team--banner
         @include container(100%, auto, center, column)
+        margin-top: 70px
         width: 100%
         padding: 30px 0
         background-color: $blackText
