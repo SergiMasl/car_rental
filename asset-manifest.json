@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/car_rental/static/css/main.eaeb4452.css",
-    "main.js": "/car_rental/static/js/main.9c192715.js",
+    "main.css": "/car_rental/static/css/main.58bc6466.css",
+    "main.js": "/car_rental/static/js/main.e4cae57f.js",
     "static/media/audi_A1_S_Line.png": "/car_rental/static/media/audi_A1_S_Line.db65d5a970d440c386d2.png",
     "static/media/audi_cab.png": "/car_rental/static/media/audi_cab.f679ad64e2c4895f3f35.png",
     "static/media/vw_colf_6.png": "/car_rental/static/media/vw_colf_6.9086432e457d2f434e3e.png",
@@ -31,15 +31,19 @@
     "static/media/map-pin-svg.svg": "/car_rental/static/media/map-pin-svg.df1f6dbfabee7e60d0398afa65cde657.svg",
     "static/media/cross.svg": "/car_rental/static/media/cross.9fe4ffb6c1869f750b72.svg",
     "static/media/car-svgrepo-com.svg": "/car_rental/static/media/car-svgrepo-com.a14d9196b29ff8c40788c54bb0375e90.svg",
+    "static/media/person-svgrepo-com.svg": "/car_rental/static/media/person-svgrepo-com.7949226a4511049ae5f6bb936c8a6475.svg",
     "static/media/lets_drive.svg": "/car_rental/static/media/lets_drive.adb3febbd28e7ec36f767dbf91a354e8.svg",
     "static/media/car--savg--calendar.svg": "/car_rental/static/media/car--savg--calendar.488957136fd92df709676166ba9afbba.svg",
+    "static/media/exit-to-app-svgrepo-com.svg": "/car_rental/static/media/exit-to-app-svgrepo-com.8e11297c32f8fda74205c19b0a5f3cad.svg",
+    "static/media/password-lock-svgrepo-com.svg": "/car_rental/static/media/password-lock-svgrepo-com.30ace3ac61997bcbc33ee7aff396a05e.svg",
+    "static/media/email-open-svgrepo-com.svg": "/car_rental/static/media/email-open-svgrepo-com.8df9836a2eb81887a86bf7b88f7be327.svg",
     "static/media/burger-menu-svgrepo-com.svg": "/car_rental/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
     "index.html": "/car_rental/index.html",
-    "main.eaeb4452.css.map": "/car_rental/static/css/main.eaeb4452.css.map",
-    "main.9c192715.js.map": "/car_rental/static/js/main.9c192715.js.map"
+    "main.58bc6466.css.map": "/car_rental/static/css/main.58bc6466.css.map",
+    "main.e4cae57f.js.map": "/car_rental/static/js/main.e4cae57f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaeb4452.css",
-    "static/js/main.9c192715.js"
+    "static/css/main.58bc6466.css",
+    "static/js/main.e4cae57f.js"
   ]
 }
