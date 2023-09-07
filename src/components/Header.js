@@ -2,11 +2,11 @@ import "../styles/header.sass";
 import { react, useState } from "react";
 import Logo from "../styles/img/svg/car-svg--logo.svg";
 import BurderMenu from "../styles/img/svg/burger-menu-svgrepo-com.svg";
+import logOut from "./functions/logOut";
 
-const Header = () => {
+const Header = ({ setIsOpenLogIn, toggleMenu, toggleMenu2, isLogIn }) => {
   const [isActiveBurger, setActiveBurger] = useState(false);
   const setBurgerBtm = () => {
-    // !isActiveBurger ? setActiveBurger(true) : setActiveBurger(false);
     setActiveBurger(!isActiveBurger);
   };
 
@@ -41,8 +41,16 @@ const Header = () => {
         </a>
       </div>
       <div className="header--log--wrapper">
-        <button>Sign In</button>
-        <button>Sign Up</button>
+        {!isLogIn ? (
+          <div className="home--btm-wrapper">
+            <button onClick={toggleMenu}> Sign In</button>
+            <button onClick={toggleMenu2}>Sign Up</button>
+          </div>
+        ) : (
+          <div className="home--btm-wrapper">
+            <button onClick={() => logOut}>Log Out</button>
+          </div>
+        )}
       </div>
     </>
   );
