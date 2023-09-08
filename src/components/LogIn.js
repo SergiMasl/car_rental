@@ -13,7 +13,7 @@ const LogIn = ({ setIsOpenLogIn, setIsLogIn }) => {
     e.preventDefault();
     // getLogIn([username, password]);
     const checkLogIn = getLogIn([username, password]);
-    if (checkLogIn == true) {
+    if (checkLogIn) {
       setIsOpenLogIn();
       setIsLogIn(true);
     } else {

@@ -3,8 +3,8 @@ import { React } from "react";
 import Logo from "../styles/img/car-main-logo.png";
 import logOut from "./functions/logOut";
 
-const Home = ({ toggleMenu, toggleMenu2, isLogIn, setIsLogIn }) => {
-  const logOutBtm = () => {
+const Home = ({ toggleLogIn, toggleLogUp, isLogIn, setIsLogIn }) => {
+  const toggleLogOut = () => {
     logOut();
     setIsLogIn();
   };
@@ -32,12 +32,12 @@ const Home = ({ toggleMenu, toggleMenu2, isLogIn, setIsLogIn }) => {
           </p>
           {!isLogIn ? (
             <div className="home--btm-wrapper">
-              <button onClick={toggleMenu}> Sign In</button>
-              <button onClick={toggleMenu2}>Sign Up</button>
+              <button onClick={toggleLogIn}> Sign In</button>
+              <button onClick={toggleLogUp}>Sign Up</button>
             </div>
           ) : (
             <div className="home--btm-wrapper">
-              <button onClick={() => logOutBtm()}>Log Out</button>
+              <button onClick={() => toggleLogOut()}>Log Out</button>
             </div>
           )}
         </div>

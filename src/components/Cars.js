@@ -6,10 +6,13 @@ const Cars = () => {
   const [carInFocus, setCarInFocus] = useState("audi_A1_S_Line");
   const [currentImageIndex, setCurrentImageIndex] = useState("audi_A1_S_Line");
   console.log(currentImageIndex);
+
   const handleCarClick = (carId) => {
     setCurrentImageIndex(carId);
     setCarInFocus(carId);
   };
+
+  const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Flue"];
 
   return (
     <div className="container container--cars" id="cars">
@@ -18,7 +21,7 @@ const Cars = () => {
         <h2>Our Rental Fleet</h2>
         <p>
           Choose from a variety of our amazing vehicles to rent for your next
-          <br></br>
+          <br />
           adventure or business trip
         </p>
         <div className="cars--info--wrap">
@@ -27,7 +30,7 @@ const Cars = () => {
               <div
                 key={item.carId}
                 className={`car-btm--choosing ${
-                  carInFocus == item.carId ? "selected" : ""
+                  carInFocus === item.carId ? "selected" : ""
                 }`}
                 onClick={() => handleCarClick(item.carId)}
               >
@@ -46,61 +49,24 @@ const Cars = () => {
               <div className="car-price class1">
                 <p className="car-price--info">
                   Price: $
-                  {carList.find((item) => item.carId === carInFocus).price}{" "}
+                  {carList.find((item) => item.carId === carInFocus).price}
                   <br />/ day
                 </p>
               </div>
               <div className="car-info-detals--container">
-                <div className="car-info--detals class2">
-                  <p>Model</p>
-                  <span>|</span>
-                  <p>
-                    {carList.find((item) => item.carId === carInFocus).Model}
-                  </p>
-                </div>
-                <div className="car-info--detals class3">
-                  <p>Mark</p>
-                  <span>|</span>
-                  <p>
-                    {carList.find((item) => item.carId === carInFocus).Mark}
-                  </p>
-                </div>
-                <div className="car-info--detals class4">
-                  <p>Yea</p>
-                  <span>|</span>
-                  <p>
-                    {carList.find((item) => item.carId === carInFocus).Year}
-                  </p>
-                </div>
-                <div className="car-info--detals class5">
-                  <p>Doors</p>
-                  <span>|</span>
-                  <p>
-                    {carList.find((item) => item.carId === carInFocus).Doors}
-                  </p>
-                </div>
-                <div className="car-info--detals class6">
-                  <p>A/C</p>
-                  <span>|</span>
-                  <p> {carList.find((item) => item.carId === carInFocus).AC}</p>
-                </div>
-                <div className="car-info--detals class7">
-                  <p>Transmission</p>
-                  <span>|</span>
-                  <p>
-                    {
-                      carList.find((item) => item.carId === carInFocus)
-                        .Transmission
-                    }
-                  </p>
-                </div>
-                <div className="car-info--detals">
-                  <p>Flue</p>
-                  <span>|</span>
-                  <p>
-                    {carList.find((item) => item.carId === carInFocus).Flue}
-                  </p>
-                </div>
+                {list.map((listItem) => (
+                  <div className="car-info--detals" key={listItem}>
+                    <p>{listItem}</p>
+                    <span>|</span>
+                    <p>
+                      {
+                        carList.find((item) => item.carId === carInFocus)[
+                          listItem
+                        ]
+                      }
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -8,7 +8,6 @@ const getLogIn = (e) => {
   } else {
     return false;
   }
-  return false;
 };
 
 export default getLogIn;

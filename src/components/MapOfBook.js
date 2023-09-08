@@ -28,7 +28,7 @@ const MapOfBook = () => {
         <h2>Quick & easy car rental</h2>
         <div>
           {data.map((item) => (
-            <div className="book--map--item">
+            <div key={item.title} className="book--map--item">
               <img src={item.img} />
               <h3>{item.title}</h3>
               <p>{item.text}</p>

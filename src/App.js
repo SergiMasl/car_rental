@@ -16,10 +16,11 @@ function App() {
   const [isOpenLogIn, setIsOpenLogIn] = useState(false);
   const [isOpenLogUp, setIsOpenLogUp] = useState(false);
   const [isLogIn, setIsLogIn] = useState(false);
-  const toggleMenu = () => {
+
+  const toggleLogIn = () => {
     setIsOpenLogIn(!isOpenLogIn);
   };
-  const toggleMenu2 = () => {
+  const toggleLogUp = () => {
     setIsOpenLogUp(!isOpenLogUp);
   };
 
@@ -30,14 +31,14 @@ function App() {
       )}
       {!isOpenLogUp ? null : <SingUp setIsOpenLogUp={setIsOpenLogUp} />}
       <Header
-        setIsOpenLogIn={setIsOpenLogIn}
         isLogIn={isLogIn}
-        toggleMenu={toggleMenu}
-        toggleMenu2={toggleMenu2}
+        toggleLogIn={toggleLogIn}
+        toggleLogUp={toggleLogUp}
+        setIsLogIn={setIsLogIn}
       />
       <Home
-        toggleMenu={toggleMenu}
-        toggleMenu2={toggleMenu2}
+        toggleLogIn={toggleLogIn}
+        toggleLogUp={toggleLogUp}
         isLogIn={isLogIn}
         setIsLogIn={setIsLogIn}
       />

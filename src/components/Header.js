@@ -3,52 +3,41 @@ import { react, useState } from "react";
 import Logo from "../styles/img/svg/car-svg--logo.svg";
 import BurderMenu from "../styles/img/svg/burger-menu-svgrepo-com.svg";
 import logOut from "./functions/logOut";
+import headerLinksArr from "../fake-back-end/headerLinksArr.json";
 
-const Header = ({ setIsOpenLogIn, toggleMenu, toggleMenu2, isLogIn }) => {
+const Header = ({ setIsLogIn, toggleLogIn, toggleLogUp, isLogIn }) => {
   const [isActiveBurger, setActiveBurger] = useState(false);
   const setBurgerBtm = () => {
     setActiveBurger(!isActiveBurger);
+  };
+  const toggleLogOut = () => {
+    logOut();
+    setIsLogIn();
   };
 
   const links = (
     <>
       <div className="header--links">
-        <a href="#home" className="header--link" onClick={() => setBurgerBtm()}>
-          Home
-        </a>
-        <a
-          href="#about"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
-          About
-        </a>
-        <a href="#book" className="header--link" onClick={() => setBurgerBtm()}>
-          Book a Car
-        </a>
-        <a href="#cars" className="header--link" onClick={() => setBurgerBtm()}>
-          Vehical Models
-        </a>
-        <a href="#team" className="header--link" onClick={() => setBurgerBtm()}>
-          Our Team
-        </a>
-        <a
-          href="#contact"
-          className="header--link"
-          onClick={() => setBurgerBtm()}
-        >
-          Contact
-        </a>
+        {headerLinksArr.map((item) => (
+          <a
+            href={item.href}
+            key={item.href}
+            className="header--link"
+            onClick={() => setBurgerBtm()}
+          >
+            {item.title}
+          </a>
+        ))}
       </div>
       <div className="header--log--wrapper">
         {!isLogIn ? (
           <div className="home--btm-wrapper">
-            <button onClick={toggleMenu}> Sign In</button>
-            <button onClick={toggleMenu2}>Sign Up</button>
+            <button onClick={toggleLogIn}> Sign In</button>
+            <button onClick={toggleLogUp}>Sign Up</button>
           </div>
         ) : (
           <div className="home--btm-wrapper">
-            <button onClick={() => logOut}>Log Out</button>
+            <button onClick={() => toggleLogOut()}>Log Out</button>
           </div>
         )}
       </div>
