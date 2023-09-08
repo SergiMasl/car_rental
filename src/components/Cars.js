@@ -25,7 +25,7 @@ const Cars = () => {
           adventure or business trip
         </p>
         <div className="cars--info--wrap">
-          <div>
+          <div className="cars--item--wrapper">
             {carList.map((item) => (
               <div
                 key={item.carId}

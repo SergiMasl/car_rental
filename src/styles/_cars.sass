@@ -48,37 +48,21 @@
                 width: 18%
                 margin-right: 50px
 
-            @media  (min-width: 390px) and (max-width: 500px)
-                display: grid
-                grid-template-columns: 1fr 1fr
-
+            @media  (min-width: 40px) and (max-width: 905px)
                 align-items: center
                 margin: 0
-                width: 100%
-            @media  (min-width: 40) and (max-width: 389px)
-                display: grid
-                grid-template-columns: 1fr
-
-                align-items: center
-                margin: 0
-                width: 100%
-            @media  (min-width: 501px) and (max-width: 905px)
-                display: grid
-                grid-template-columns: 1fr 1fr
-                align-items: center
-                margin: 0
-                width: 100%
+                width: 63%
                 font-size: 15px
 
             div
-                width: 90%
+                width: 100%
                 padding: 15px
                 cursor: pointer
                 font-family: $fontText
                 border: none
 
                 @media  (min-width: 40) and (max-width: 500px)
-                    width: 90%
+                    width: 100%
                     padding: 10px
 
                 &:hover
@@ -90,39 +74,29 @@
             margin-right: 30px
             @media  (min-width: 40px) and (max-width: 500px)
                 width: 100%
-                margin: 10px 0
+
             @media  (min-width: 501px) and (max-width: 905px)
-                width: 70%
-
-                grid-area: 1 / 2 / 2 / 3
-
+                width: 100%
             img
                 width: 100%
+
         div:nth-child(3)
             width: 25%
             border: 1px solid red
 
+            @media  (min-width: 501px) and (max-width: 905px)
+                border: none
+                width: 200%
             @media  (min-width: 40px) and (max-width: 500px)
                 width: 100%
-                border: none
-
-            @media  (min-width: 501px) and (max-width: 905px)
-                grid-area: 2 / 1 / 3 / 3
-                border: none
+                // &:hover
+                //     none
 
             div
                 width: 100%
 
-                @media  (min-width: 390px) and (max-width: 500px)
-                    display: grid
-                    grid-template-columns: 1fr 1fr
-                    grid-gap: 10px
-
-                @media  (min-width: 40) and (max-width: 389px)
+                @media  (min-width: 40) and (max-width: 500px)
                     align-items: center
-                    display: grid
-                    grid-template-columns: 1fr
-                    grid-gap: 10px
                     border: none
 
                 div
@@ -138,11 +112,14 @@
                     font-weight: 900
                     font-size: 20px
                     width: 195px
+                    margin: 0
+                    text-align: center
 
-                    @media  (min-width: 40px) and (max-width: 500px)
+                    @media  (min-width: 40px) and (max-width: 905px)
                         font-weight: 500
                         font-size: 15px
-                        width: auto
+                        width: 100%
+                        padding: 10px 0
 
                     p
                         margin: 0
@@ -154,10 +131,9 @@
                     margin: 0
                     padding: 0
 
-                    @media  (min-width: 40px) and (max-width: 500px)
+                    @media  (min-width: 40px) and (max-width: 389px)
                         align-items: center
-                    @media  (min-width: 40) and (max-width: 389px)
-                        align-items: center
+                        width: 100%
 
                     .car-info--detals
                         background-color: $whiteColor
@@ -168,10 +144,10 @@
                         width: 195px
                         border-bottom: 1px solid $btmBrandColor
 
-                        @media  (min-width: 40px) and (max-width: 500px)
+                        @media  (min-width: 40px) and (max-width: 905px)
                             font-size: 10px
-                            width: auto
-                            width: 195px
+                            width: 100%
+                            padding: 10px 0
 
                     p:nth-child(1)
                         margin: 0
@@ -180,7 +156,7 @@
 
                         @media  (min-width: 40px) and (max-width: 500px)
                             font-size: 10px
-                            width: auto
+                            // width: auto
 
                     p:nth-child(3)
                         margin: 0
@@ -190,7 +166,7 @@
 
                         @media  (min-width: 40px) and (max-width: 500px)
                             font-size: 10px
-                            width: auto
+                            // width: auto
 
                 // .car--submit--btm
                 //     border: none
