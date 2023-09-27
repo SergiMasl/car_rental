@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import bookJson from "../fake-back-end/book-selection-options.json";
 import "../styles/bookCar.sass";
 import LogoCar from "../styles/img/svg/car-svgrepo-com.svg";
@@ -20,6 +20,7 @@ const BookCar = () => {
     // Here, you can use the formData for further processing, e.g., sending to a server.
     console.log(formData);
   };
+  console.log(formData.date);
 
   return (
     <div className="container-book" id="book">
@@ -68,7 +69,7 @@ const BookCar = () => {
                       required
                       type="time"
                       id={fieldName}
-                      value={formData[fieldName] || ""}
+                      value={formData[fieldName] || "13:30"}
                       onChange={(e) =>
                         handleFieldChange(fieldName, e.target.value)
                       }

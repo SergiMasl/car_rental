@@ -51,7 +51,7 @@
             .title-car
                 color: $blackText
 
-        select
+        select, input
             -webkit-appearance: none
             appearance: none
             font-family: $fontText
@@ -63,25 +63,40 @@
             border-bottom: 2px solid $greyColor
             background: transparent
             border-radius: 0
+            flex: 1
             @media (max-width: 780px)
                 width: 100%
                 -webkit-appearance: none
                 appearance: none
 
-        input
-            -webkit-appearance: none
-            appearance: none
-            font-family: $fontText
+        select:-webkit-autofill
+            background-color: transparent
             color: $greyColor
-            padding: 5px 20px
+
+        input
             width: 200px
-            border: none
-            border-left: 2px solid $greyColor
-            border-bottom: 2px solid $greyColor
+
             @media (max-width: 780px)
-                width: Calc(100% - 42px)
-                -webkit-appearance: none
-                appearance: none
+                width: calc(100% - 42px)
+        //     -webkit-appearance: none
+        //     appearance: none
+        //     font-family: $fontText
+        //     color: $greyColor
+        //     padding: 5px 20px
+        //     width: 200px
+        //     border: none
+        //     border-left: 2px solid $greyColor
+        //     border-bottom: 2px solid $greyColor
+        //     background: transparent
+        //     border-radius: 0
+        //     @media (max-width: 780px)
+        //         width: calc(100% - 42px)
+        //         -webkit-appearance: none
+        //         appearance: none
+        // input:-webkit-autofill
+
+        //     background-color: transparent
+        //     color: $greyColor
 
     button
         background-color: $btmBrandColor
