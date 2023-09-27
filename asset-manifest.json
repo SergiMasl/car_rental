@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/car_rental/static/css/main.20448836.css",
+    "main.css": "/car_rental/static/css/main.44e81d68.css",
     "main.js": "/car_rental/static/js/main.dcefa5b4.js",
     "static/media/audi_A1_S_Line.png": "/car_rental/static/media/audi_A1_S_Line.db65d5a970d440c386d2.png",
     "static/media/audi_cab.png": "/car_rental/static/media/audi_cab.f679ad64e2c4895f3f35.png",
@@ -39,11 +39,11 @@
     "static/media/email-open-svgrepo-com.svg": "/car_rental/static/media/email-open-svgrepo-com.8df9836a2eb81887a86bf7b88f7be327.svg",
     "static/media/burger-menu-svgrepo-com.svg": "/car_rental/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
     "index.html": "/car_rental/index.html",
-    "main.20448836.css.map": "/car_rental/static/css/main.20448836.css.map",
+    "main.44e81d68.css.map": "/car_rental/static/css/main.44e81d68.css.map",
     "main.dcefa5b4.js.map": "/car_rental/static/js/main.dcefa5b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.20448836.css",
+    "static/css/main.44e81d68.css",
     "static/js/main.dcefa5b4.js"
   ]
 }
