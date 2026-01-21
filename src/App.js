@@ -24,6 +24,8 @@ function App() {
     setIsOpenLogUp(!isOpenLogUp);
   };
 
+  const isTrue = "false";
+
   return (
     <div className="App">
       {!isOpenLogIn ? null : (
@@ -47,7 +49,7 @@ function App() {
       <Cars />
       <OurTeam />
       <Reviewed />
-      <Footer />
+      <Footer isTrue={isTrue} isFalse={"dafsd"} />
     </div>
   );
 }
